@@ -1,7 +1,11 @@
 package com.bae.service;
 
+import org.springframework.http.ResponseEntity;
+
 public interface SourceService {
 
-	Object findByNumber(String number);
+	ResponseEntity<Object> findByName(String name);
+	ResponseEntity<Object> findByNumber(String number);
+	
 
 }
